@@ -1,2 +1,2 @@
 print ("AWAKE!!!")
-print ("Rashik---$$$"
+print ("Rashik---$$$")
