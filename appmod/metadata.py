@@ -1,0 +1,16 @@
+import pandas as pd
+import sqlite3
+conn = sqlite3.connect("DATA/int_platform.db")
+
+
+def migrate_datasets_metadata_to_db(conn):
+    data = pd.read_csv("DATA/datasets_metadata.csv")
+    data.to_sql("datasets_metadata", conn)
+
+
+def get_all_datasets_metadata(conn):
+    sql = '''
+        SELECT * FROM datasets_metadata'''
+    data = pd.read_sql(sql, conn)
+    conn.close()
+    return (data)
