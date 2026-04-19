@@ -27,7 +27,7 @@ conn = check_connection()
 data = get_all_cyber_incdt(conn)
 
 
-st.title("Welcome to Home Page")
+st.title("Welcome to Main Page")
 with st.sidebar:
     st.header("Navigation")
     severity_level = st.selectbox("severity Level", data["severity"].unique())

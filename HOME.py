@@ -13,7 +13,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("Welcome to the Main Page")
+st.title("Welcome to the Home Page")
 
 session_state = st.session_state
 if "logged_in" not in session_state:
